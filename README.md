@@ -1,6 +1,6 @@
 <img src="https://github.com/AtsushiSakai/PythonRobotics/raw/master/icon.png?raw=true" align="right" width="300" alt="header pic"/>
 
-# PythonRobotics
+# Autonomous Target Tracking System
 ![GitHub_Action_Linux_CI](https://github.com/AtsushiSakai/PythonRobotics/workflows/Linux_CI/badge.svg)
 ![GitHub_Action_MacOS_CI](https://github.com/AtsushiSakai/PythonRobotics/workflows/MacOS_CI/badge.svg)
 ![GitHub_Action_Windows_CI](https://github.com/AtsushiSakai/PythonRobotics/workflows/Windows_CI/badge.svg)
@@ -10,9 +10,6 @@
 
 
 
-# What is PythonRobotics?
-
-PythonRobotics is a Python code collection and a [textbook](https://atsushisakai.github.io/PythonRobotics/index.html) of robotics algorithms.
 
 Features:
 
