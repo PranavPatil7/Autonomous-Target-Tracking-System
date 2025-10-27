@@ -6,73 +6,9 @@
 ![GitHub_Action_Windows_CI](https://github.com/AtsushiSakai/PythonRobotics/workflows/Windows_CI/badge.svg)
 [![Build status](https://ci.appveyor.com/api/projects/status/sb279kxuv1be391g?svg=true)](https://ci.appveyor.com/project/AtsushiSakai/pythonrobotics)
 
-Python codes and [textbook](https://atsushisakai.github.io/PythonRobotics/index.html) for robotics algorithm.
 
 
-# Table of Contents
-   * [What is this?](#what-is-this)
-   * [Requirements](#requirements)
-   * [Documentation](#documentation)
-   * [How to use](#how-to-use)
-   * [Localization](#localization)
-      * [Extended Kalman Filter localization](#extended-kalman-filter-localization)
-      * [Particle filter localization](#particle-filter-localization)
-      * [Histogram filter localization](#histogram-filter-localization)
-   * [Mapping](#mapping)
-      * [Gaussian grid map](#gaussian-grid-map)
-      * [Ray casting grid map](#ray-casting-grid-map)
-      * [Lidar to grid map](#lidar-to-grid-map)
-      * [k-means object clustering](#k-means-object-clustering)
-      * [Rectangle fitting](#rectangle-fitting)
-   * [SLAM](#slam)
-      * [Iterative Closest Point (ICP) Matching](#iterative-closest-point-icp-matching)
-      * [FastSLAM 1.0](#fastslam-10)
-   * [Path Planning](#path-planning)
-      * [Dynamic Window Approach](#dynamic-window-approach)
-      * [Grid based search](#grid-based-search)
-         * [Dijkstra algorithm](#dijkstra-algorithm)
-         * [A* algorithm](#a-algorithm)
-         * [D* algorithm](#d-algorithm)
-         * [D* Lite algorithm](#d-lite-algorithm)
-         * [Potential Field algorithm](#potential-field-algorithm)
-         * [Grid based coverage path planning](#grid-based-coverage-path-planning)
-         * [Particle Swarm Optimization (PSO)](#particle-swarm-optimization-pso)  
-      * [State Lattice Planning](#state-lattice-planning)
-         * [Biased polar sampling](#biased-polar-sampling)
-         * [Lane sampling](#lane-sampling)
-      * [Probabilistic Road-Map (PRM) planning](#probabilistic-road-map-prm-planning)
-      * [Rapidly-Exploring Random Trees (RRT)](#rapidly-exploring-random-trees-rrt)
-         * [RRT*](#rrt)
-         * [RRT* with reeds-shepp path](#rrt-with-reeds-shepp-path)
-         * [LQR-RRT*](#lqr-rrt)
-      * [Quintic polynomials planning](#quintic-polynomials-planning)
-      * [Reeds Shepp planning](#reeds-shepp-planning)
-      * [LQR based path planning](#lqr-based-path-planning)
-      * [Optimal Trajectory in a Frenet Frame](#optimal-trajectory-in-a-frenet-frame)
-   * [Path Tracking](#path-tracking)
-      * [move to a pose control](#move-to-a-pose-control)
-      * [Stanley control](#stanley-control)
-      * [Rear wheel feedback control](#rear-wheel-feedback-control)
-      * [Linear–quadratic regulator (LQR) speed and steering control](#linearquadratic-regulator-lqr-speed-and-steering-control)
-      * [Model predictive speed and steering control](#model-predictive-speed-and-steering-control)
-      * [Nonlinear Model predictive control with C-GMRES](#nonlinear-model-predictive-control-with-c-gmres)
-   * [Arm Navigation](#arm-navigation)
-      * [N joint arm to point control](#n-joint-arm-to-point-control)
-      * [Arm navigation with obstacle avoidance](#arm-navigation-with-obstacle-avoidance)
-   * [Aerial Navigation](#aerial-navigation)
-      * [drone 3d trajectory following](#drone-3d-trajectory-following)
-      * [rocket powered landing](#rocket-powered-landing)
-   * [Bipedal](#bipedal)
-      * [bipedal planner with inverted pendulum](#bipedal-planner-with-inverted-pendulum)
-   * [License](#license)
-   * [Use-case](#use-case)
-   * [Contribution](#contribution)
-   * [Citing](#citing)
-   * [Support](#support)
-   * [Sponsors](#sponsors)
-      * [JetBrains](#JetBrains)
-      * [1Password](#1password)
-   * [Authors](#authors)
+
 
 # What is PythonRobotics?
 
@@ -85,19 +21,6 @@ Features:
 2. Widely used and practical algorithms are selected.
 
 3. Minimum dependency.
-
-See this documentation 
-
-- [Getting Started — PythonRobotics documentation](https://atsushisakai.github.io/PythonRobotics/modules/0_getting_started/1_what_is_python_robotics.html)
-
-or this Youtube video:
-
-- [PythonRobotics project audio overview](https://www.youtube.com/watch?v=uMeRnNoJAfU)
-
-or this paper for more details:
-
-- [\[1808\.10703\] PythonRobotics: a Python code collection of robotics algorithms](https://arxiv.org/abs/1808.10703) ([BibTeX](https://github.com/AtsushiSakai/PythonRoboticsPaper/blob/master/python_robotics.bib))
-
 
 # Requirements to run the code
 
@@ -624,54 +547,4 @@ You can set the footsteps, and the planner will modify those automatically.
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Bipedal/bipedal_planner/animation.gif)
 
-# License 
-
-MIT
-
-# Use-case
-
-If this project helps your robotics project, please let me know with creating an issue.
-
-Your robot's video, which is using PythonRobotics, is very welcome!!
-
-This is a list of user's comment and references:[users\_comments](https://github.com/AtsushiSakai/PythonRobotics/blob/master/users_comments.md)
-
-# Contribution
-
-Any contribution is welcome!! 
-
-Please check this document:[How To Contribute — PythonRobotics documentation](https://atsushisakai.github.io/PythonRobotics/modules/0_getting_started/3_how_to_contribute.html)
-
-# Citing
-
-If you use this project's code for your academic work, we encourage you to cite [our papers](https://arxiv.org/abs/1808.10703) 
-
-If you use this project's code in industry, we'd love to hear from you as well; feel free to reach out to the developers directly.
-
-# <a id="support"></a>Supporting this project
-
-If you or your company would like to support this project, please consider:
-
-- [Sponsor @AtsushiSakai on GitHub Sponsors](https://github.com/sponsors/AtsushiSakai)
-
-- [Become a backer or sponsor on Patreon](https://www.patreon.com/myenigma)
-
-- [One-time donation via PayPal](https://www.paypal.com/paypalme/myenigmapay/)
-
-If you would like to support us in some other way, please contact with creating an issue.
-
-## <a id="sponsors"></a>Sponsors
-
-### <a id="JetBrains"></a>[JetBrains](https://www.jetbrains.com/)
-
-They are providing a free license of their IDEs for this OSS development.   
-
-### [1Password](https://github.com/1Password/for-open-source)
-
-They are providing a free license of their 1Password team license for this OSS project.   
-
-
-# Authors
-
-- [Contributors to AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics/graphs/contributors)
-
+#
